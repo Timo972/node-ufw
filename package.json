@@ -53,5 +53,10 @@
     "dist/**/*",
     "python/*"
   ],
-  "type": "module"
+  "type": "module",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
+  },
+  "private": false
 }
