@@ -1,6 +1,6 @@
 {
   "name": "@timo972/ufw",
-  "version": "1.0.0",
+  "version": "1.0.0-rc.0",
   "description": "ufw <-> nodejs app communication",
   "main": "./dist/index.js",
   "types": "./types/index.d.ts",
@@ -51,7 +51,8 @@
   },
   "files": [
     "dist/**/*",
-    "python/*"
+    "python/*",
+    "types/*"
   ],
   "type": "module",
   "publishConfig": {
