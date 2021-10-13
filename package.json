@@ -18,7 +18,7 @@
     "lint": "eslint src --ext .js,.ts",
     "lint:fix": "eslint src --fix --ext .js,.ts",
     "test": "jest --config jest.config.js",
-    "postinstall": "python3 -m pip install -r requirements.txt"
+    "postinstall": "python3 -m pip install -r python/requirements.txt"
   },
   "repository": {
     "type": "git",
