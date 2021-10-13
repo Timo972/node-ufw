@@ -1,5 +1,5 @@
 {
-  "name": "ufw",
+  "name": "@timo972/ufw",
   "version": "1.0.0",
   "description": "ufw <-> nodejs app communication",
   "main": "./dist/index.js",
