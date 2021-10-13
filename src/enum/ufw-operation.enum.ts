@@ -4,8 +4,9 @@ export enum UFWOperation {
   SetDefault,
   GetStatus,
   GetRules,
-  GetListing,
+  GetListening,
   Enable,
   Disable,
   Reset,
+  Reload
 }

@@ -6,12 +6,6 @@ import {
 } from "./util/validate";
 import { Protocol } from "./enum/proto.enum";
 
-export interface RuleConfig {
-  from?: string;
-  to?: string;
-  port?: number;
-  proto?: Protocol;
-}
 
 export interface ExistingRule {
   id: number;
@@ -31,7 +25,7 @@ export class Rule {
   /**
    * @param {number} _id WARNING: Do not pass something here!!! Only used internally.
    */
-  constructor(_id: number) {
+  constructor(_id?: number) {
     this._id = _id;
   }
 

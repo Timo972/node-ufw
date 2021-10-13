@@ -13,8 +13,9 @@
     "experimentalDecorators": true,
     "noImplicitAny": true,
     "rootDir": "./src",
-    "lib": ["ES2015"]
+    "target": "ESNEXT",
+    "module": "ESNEXT"
   },
   "include": ["src/*"],
-  "exclude": ["rollup.config.js", "test/*", "dist/*", "node_modules"]
+  "exclude": ["rollup.config.js", "tests/*", "dist/*", "node_modules"]
 }
