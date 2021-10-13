@@ -1,0 +1,52 @@
+{
+  "name": "ufw",
+  "version": "1.0.0",
+  "description": "ufw <-> nodejs app communication",
+  "main": "./dist/index.js",
+  "types": "./types/index.d.ts",
+  "module": "./dist/index.esm.js",
+  "exports": {
+    ".": {
+      "require": "./dist/index.js",
+      "import": "./dist/index.esm.js",
+      "default": "./dist/index.esm.js"
+    }
+  },
+  "scripts": {
+    "build": "rollup -c",
+    "format": "prettier --write \"src/**/*.(js|ts)\"",
+    "lint": "eslint src --ext .js,.ts",
+    "lint:fix": "eslint src --fix --ext .js,.ts",
+    "test": "jest --config jest.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Timo972/node-ufw.git"
+  },
+  "keywords": [
+    "ufw",
+    "firewall"
+  ],
+  "author": "Timo972",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Timo972/node-ufw/issues"
+  },
+  "homepage": "https://github.com/Timo972/node-ufw#readme",
+  "devDependencies": {
+    "@types/node": "^16.10.5",
+    "@typescript-eslint/eslint-plugin": "^5.0.0",
+    "@typescript-eslint/parser": "^5.0.0",
+    "eslint": "^8.0.0",
+    "prettier": "^2.4.1",
+    "rollup": "^2.58.0",
+    "rollup-plugin-dts": "^4.0.0",
+    "rollup-plugin-typescript2": "^0.30.0",
+    "tslib": "^2.3.1",
+    "typescript": "^4.4.4"
+  },
+  "files": [
+    "dist/**/*"
+  ],
+  "type": "module"
+}
