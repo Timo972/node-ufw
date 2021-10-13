@@ -12,6 +12,7 @@ on:
 
 jobs:
   test:
+    if: "!true"
     name: Build & Test
     runs-on: ubuntu-latest
     strategy:
@@ -40,7 +41,7 @@ jobs:
             node_modules
           restore-keys: |
             ${{ runner.os }}-build-${{ env.cache-name }}-
-            
+
       - name: Install Dependencies
         if: steps.cache.outputs.cache-hit != 'true'
         run: npm install
