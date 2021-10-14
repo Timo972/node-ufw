@@ -59,5 +59,8 @@
     "access": "public",
     "registry": "https://registry.npmjs.org"
   },
-  "private": false
+  "private": false,
+  "engines": {
+    "node": ">= 12"
+  }
 }

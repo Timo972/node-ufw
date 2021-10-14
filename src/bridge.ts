@@ -34,7 +34,6 @@ export function execute<T>(req: UFWRequest): Promise<T> {
       /"/g,
       '\\"'
     );
-    console.log(data)
     exec(
       `python3 ${join(__dirname, "..", "python", "ufw-bridge.py")} ${data}`,
       (error, stdout) => {
@@ -42,7 +41,6 @@ export function execute<T>(req: UFWRequest): Promise<T> {
           reject(error);
           return;
         }
-        console.log(stdout);
         try {
           if (req.returnJson) resolve(JSON.parse(stdout) as unknown as T);
           else resolve(stdout as unknown as T);
